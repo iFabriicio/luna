@@ -867,7 +867,7 @@ justify-content:center;
 
         <!-- FRIEND -->
         <div class="friend">
-            <div class="avatar-friend letter">CH</div>
+            <div class="avatar-friend letter">X</div>
 
             <div class="data">
                 <div class="nick">CHIMI</div>
@@ -1218,6 +1218,22 @@ enterBtn.addEventListener("click", () => {
     });
 
 });
+
+/* Bloquear clic derecho */
+document.addEventListener('contextmenu', function(e){
+  e.preventDefault();
+});
+
+/* Bloquear selección de texto */
+document.addEventListener('selectstart', function(e){
+  e.preventDefault();
+});
+
+/* Bloquear arrastrar imágenes/texto */
+document.addEventListener('dragstart', function(e){
+  e.preventDefault();
+});
+
 </script>
 
 </body>
